@@ -39,7 +39,7 @@
       };
     </script>
     <style>
-      *{
+      * {
         margin: 0;
         padding: 0;
         font-size: 16px;
@@ -63,12 +63,14 @@
   </head>
   <body>
     <header class="bg-secondary md:py-6 py-3 px-4">
-      <nav class="flex md:container mx-auto justify-between items-center">
+      <nav class="flex max-w-[1320px] mx-auto justify-between items-center">
         <div class="flex items-center gap-3">
           <img class="cursor-pointer" src="./assets/logo-header.png" alt="" />
-          <h1 class="font-sora md:text-2xl cursor-pointer ">Browse<span class="text-accent">4</span>Pets</h1>
+          <h1 class="font-sora md:text-2xl cursor-pointer">
+            Browse<span class="text-accent">4</span>Pets
+          </h1>
         </div>
-        <div class=" hidden lg:flex">
+        <div class="hidden lg:flex">
           <ul class="flex gap-8 items-center text-dark2 text-xl leading-6">
             <li>
               <a
@@ -98,25 +100,48 @@
           <button>
             <i class="fa-solid fa-magnifying-glass text-2xl"></i>
           </button>
-          <button class="px-7 py-2.5 text-xl font-sora border border-accent rounded-lg hover:bg-[#ffdb2616]">Login</button>
-          <button class="px-7 py-2.5 text-xl font-sora bg-accent rounded-lg hover:bg-primaryHover">Register</button>
+          <button
+            class="px-7 py-2.5 text-xl font-sora border border-accent rounded-lg hover:bg-[#ffdb2616]"
+          >
+            Login
+          </button>
+          <button
+            class="px-7 py-2.5 text-xl font-sora bg-accent rounded-lg hover:bg-primaryHover"
+          >
+            Register
+          </button>
         </div>
       </nav>
     </header>
     <main class="">
       <!-- banner section start -->
-       <section class=" md:container  mx-auto px-4">
+      <section class="md:max-w-[1320px] mx-auto px-4">
         <!-- text content  -->
-        <div class="md:w-[43%]">
-          <h1 class="text-dark2 font-adlam text-3xl leading-10 md:text-[56px] md:leading-[73px] md:pt-[100px] pt-8 pb-3 md:pb-4">Pamper Your Pet, <br> Because They Deserve <br> the Bes</h1>
-          <p class="md:text-xl leading-5 text-dark2 md:leading-9 pb-3 md:pb-6">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
-          <button class="bg-accent text-xl leading-6 py-2.5 px-7 text-dark2 hover:primaryHover rounded-lg">Find a pet</button>
+        <div class="md:w-[50%]">
+          <h1
+            class="text-dark2 font-adlam text-3xl leading-10 md:text-[56px] md:leading-[73px] md:pt-[100px] pt-8 pb-3 md:pb-4"
+          >
+            Pamper Your Pet, <br />
+            Because They Deserve <br />
+            the Bes
+          </h1>
+          <p
+            class="md:text-xl leading-5 text-dark2 md:leading-9 pb-3 md:pb-6 pr-2 md:pr-0"
+          >
+            Discover a world of treats, toys, and essentials handpicked for your
+            furry friends. Shop now and make tails wag with joy!
+          </p>
+          <button
+            class="bg-accent md:text-xl text-base md:leading-6 leading-5 py-2.5 px-7 text-dark2 hover:primaryHover rounded-lg cursor-pointer"
+          >
+            Find a pet
+          </button>
         </div>
         <!-- image content  -->
         <div class="md:mt-[-400px] mt-[-95px] md:ml-0 -ml-4 flex justify-end">
-          <img src="assets/cat-bigg.png" alt="">
+          <img class="w-full" src="assets/big-catt.png" alt="" />
         </div>
-       </section>
+      </section>
     </main>
     <footer></footer>
   </body>
