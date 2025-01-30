@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Brows4Pets</title>
+    <title>Pets Shop</title>
     <!-- font awesome cdn -->
     <script
       src="https://kit.fontawesome.com/1632af40cc.js"
@@ -29,9 +29,10 @@
           extend: {
             colors: {
               clifford: "#da373d",
-              primary: "#FFDC26",
-              secondary: "#FFF9F4",
-              dark2: "#414040",
+              accent: "#FFDC26",
+              secondary: "rgb(255, 249, 244)",
+              dark2: "rgb(17, 17, 17)",
+              primaryHover: "rgba(255, 219, 38, 0.807)",
             },
           },
         },
@@ -54,10 +55,48 @@
     </style>
   </head>
   <body>
-    <header>
-      
+    <header class="bg-secondary md:py-6 py-3 px-4 font-sora">
+      <nav class="flex md:container mx-auto justify-between items-center">
+        <div class="flex items-center gap-3">
+          <img class="cursor-pointer" src="./assets/logo-header.png" alt="" />
+          <h1 class="font-sora md:text-2xl ">Browse<span class="text-accent">4</span>Pets</h1>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="flex gap-8 items-center text-dark2 text-xl leading-6">
+            <li>
+              <a
+                class="text-xl leading-6 hover:underline hover:cursor-pointer hover:text-black"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-xl leading-6 hover:underline hover:cursor-pointer hover:text-black"
+                >Breeds</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-xl leading-6 hover:underline hover:cursor-pointer hover:text-black"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="block md:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="hidden md:flex gap-4">
+          <button><i class="fa-regular fa-bell text-2xl"></i></button>
+          <button>
+            <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+          </button>
+          <button class="px-7 py-2.5 text-xl font-sora border border-accent rounded-lg hover:bg-[#ffdb2616]">Login</button>
+          <button class="px-7 py-2.5 text-xl font-sora bg-accent rounded-lg hover:bg-primaryHover">Register</button>
+        </div>
+      </nav>
     </header>
-    <main></main>
+    <main class="font-sora"></main>
     <footer></footer>
   </body>
 </html>
